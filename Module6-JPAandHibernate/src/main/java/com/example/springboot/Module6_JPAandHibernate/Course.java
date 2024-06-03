@@ -1,6 +1,11 @@
 package com.example.springboot.Module6_JPAandHibernate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
+    @Id
     private long id;
     private String name;
     private String author;
